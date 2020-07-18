@@ -1,0 +1,14 @@
+from IPython.core.interactiveshell import InteractiveShell
+InteractiveShell.ast_node_interactivity = "all"
+
+
+for n in range(2,100):
+
+  if n==2:
+    print(n)
+    continue
+  for i in range(2,n):
+    if (n%2)==0:
+      break
+  else:
+    print(n)
